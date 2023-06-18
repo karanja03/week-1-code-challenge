@@ -8,9 +8,9 @@ The speedDetector(speed) function accepts a single parameter:
 # An integer representing the speed of the vehicle.
 The function performs the following steps:
 
-# Calculates the excess speed by subtracting the threshold speed (70) from the provided speed.
-# Calculates the number of demerit points by dividing the excess speed by 5 (since each 5 km/h over the speed limit corresponds to one demerit point).
-# Evaluates the speed and determines the output message based on the following conditions:
+1. Calculates the excess speed by subtracting the threshold speed (70) from the provided speed.
+2. Calculates the number of demerit points by dividing the excess speed by 5 (since each 5 km/h over the speed limit corresponds to one demerit point).
+3. Evaluates the speed and determines the output message based on the following conditions:
 If the speed is less than 70 km/h, it prints "Ok" to indicate that the speed is within the acceptable range.
 If the speed exceeds the limit and the number of demerit points is greater than 12, it prints "License Suspended" to indicate that the driver's license should be suspended.
 If the speed exceeds the limit but the number of demerit points is within the acceptable range (12 or less), it prints the number of demerit points.
